@@ -61,7 +61,7 @@ def food(conf):
     if not conf.doorder:
         url = _make_url(nag='orderlist.do')
         text = requests.get(url=url).text
-        print(text+'\n以上是已订餐的人')
+        print(text)
         return text
 
     headers = {'Host': '10.180.201.253:8080',
