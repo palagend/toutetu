@@ -99,7 +99,7 @@ def main():
     # 注册配置
     CONF.register_opts(common_opts)
     # 解析参数
-    CONF(default_config_files=['/etc/toutetu/food.conf'])
+    CONF(default_config_files=['~/.toutetu/food.conf'])
     food(CONF)
 
 
